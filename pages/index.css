@@ -1,0 +1,12 @@
+.body {
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+.logo__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 136%;
+}
