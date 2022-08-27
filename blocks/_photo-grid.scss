@@ -1,0 +1,37 @@
+.photo-grid {
+  display: grid;
+  grid-gap: 20px;
+  padding: 60px 30px;
+  box-sizing: border-box;
+
+  &__container {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  /* &__image {
+    width: 100%;
+  } */
+
+  &__container_position_first {
+    grid-template-columns: minmax(280px, 488px) 1fr;
+    grid-template-rows: 230px;
+  }
+
+  &__container_position_second {
+    grid-template-columns: 1fr minmax(280px, 730px);
+    grid-template-rows: minmax(344px, 552px);
+  }
+
+  &__element {
+    border-radius: 10px;
+  }
+
+  &__element_color_yellow {
+    background-color: $yellow-color;
+  }
+
+  &__element_color_green {
+    background-color: $green-color;
+  }
+}
