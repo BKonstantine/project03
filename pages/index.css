@@ -1,12 +1,60 @@
+@import "../vendor/normalize.css";
+@import "../vendor/fonts/fonts.css";
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+}
+.header__title {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 112px;
+  line-height: 100%;
+  margin: 0;
+  margin-top: 58px;
+}
+.header__subtitle {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 88%;
+  margin: 0;
+  margin-top: 20px;
+}
+
 .body {
   background-color: #000;
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
+}
+.body__section {
+  margin: 0 auto;
 }
 
+.container {
+  max-width: 1120px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .logo__title {
   color: #ffffff;
   font-weight: 400;
   font-size: 22px;
   line-height: 136%;
+  margin: 0;
+  padding-left: 6px;
+}
+.logo__subtitle {
+  color: #000000;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  display: block;
+  background-color: #25e197;
+  border-radius: 4px;
+  padding: 4px 8px;
 }

@@ -1,0 +1,18 @@
+@import "../modules/variable";
+@import "../modules/mixins.scss";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+
+  &__title {
+    @include font-setup($title-color, 400, 112px, 100%);
+    margin-top: 58px;
+  }
+
+  &__subtitle {
+    @include font-setup($title-color, 400, 80px, 88%);
+    margin-top: 20px;
+  }
+}

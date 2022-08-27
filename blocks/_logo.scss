@@ -1,8 +1,21 @@
 @import "../modules/variable";
-@import '../modules/mixins.scss';
+@import "../modules/mixins.scss";
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   &__title {
     @include font-setup($title-color, 400, 22px, 136%);
+    padding-left: 6px;
+  }
+
+  &__subtitle {
+    @include font-setup(#000000, 400, 12px, 100%);
+    display: block;
+    background-color: $green-color;
+    border-radius: 4px;
+    padding: 4px 8px;
   }
 }
