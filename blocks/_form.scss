@@ -1,13 +1,25 @@
 .form {
-  font-size: 0;
   display: flex;
   align-items: center;
 
   &__input {
     @include form-setup(0, 0, 0);
+    @include font-setup($title-color, 400, 14px, 171%);
+    letter-spacing: 0.375px;
+    box-sizing: border-box;
+    padding: 13px 0 13px 16px;
     width: 348px;
     height: 50px;
     background: rgba(142, 142, 152, 0.2);
     border-radius: 8px 0px 0px 8px;
+    outline-style: none;
+  }
+
+  &__input:hover {
+    background: rgba(142, 142, 152, 0.3);
+  }
+
+  &__input:focus {
+    background: rgba(142, 142, 152, 0.3);
   }
 }
