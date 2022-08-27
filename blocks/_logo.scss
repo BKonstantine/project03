@@ -1,14 +1,10 @@
-@import "../modules/variable";
-@import "../modules/mixins.scss";
-
 .logo {
   display: flex;
   align-items: center;
   gap: 20px;
 
   &__title {
-    @include font-setup($title-color, 400, 22px, 136%);
-    padding-left: 6px;
+    @include font-setup($title-color, 400, 22px, 136%);    
   }
 
   &__subtitle {

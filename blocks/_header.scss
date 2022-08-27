@@ -1,6 +1,3 @@
-@import "../modules/variable";
-@import "../modules/mixins.scss";
-
 .header {
   display: flex;
   flex-direction: column;
@@ -14,5 +11,18 @@
   &__subtitle {
     @include font-setup($title-color, 400, 80px, 88%);
     margin-top: 20px;
+  }
+
+  &__logo {
+    margin-left: 6px;
+  }
+
+  &__form {
+    margin-top: 230px;
+  }
+
+  &__copyright {
+    margin-top: 13px;
+    margin-left: 10px;
   }
 }

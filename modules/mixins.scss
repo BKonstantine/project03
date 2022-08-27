@@ -5,3 +5,10 @@
   line-height: $lh;
   margin: 0;
 }
+
+@mixin form-setup($mar, $pad, $bor) {
+  margin: $mar;
+  padding: $pad;
+  border: $bor;
+  cursor: pointer;
+}
