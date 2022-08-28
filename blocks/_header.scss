@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 60px 0;
+  padding: 60px 30px;
 
   &__title {
     @include font-setup($title-color, 400, 112px, 100%);
