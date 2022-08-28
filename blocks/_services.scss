@@ -1,0 +1,9 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 30px;
+
+  &__title {
+    margin-top: 60px;
+  }
+}

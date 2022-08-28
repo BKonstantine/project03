@@ -1,0 +1,27 @@
+.card {
+  background-color: $bg-card-color;
+
+  &_place_services {
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  &__work-type {
+    @include font-setup($text-color, 400, 18px, 100%);
+  }
+
+  &__title {
+    @include font-setup($title-color, 400, 32px, 100%);
+    margin-top: 20px;
+  }
+
+  &__subtitle {
+    @include font-setup($text-color, 400, 32px, 125%);
+    margin-top: 40px;
+  }
+
+  &__price {
+    @include font-setup($green-color, 400, 14px, 100%);
+    margin-top: 41px;
+  }
+}

@@ -1,0 +1,3 @@
+.title {
+  @include font-setup($title-color, 400, 32px, 125%);
+}

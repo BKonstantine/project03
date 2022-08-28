@@ -1,0 +1,3 @@
+.text {
+    @include font-setup($text-color, 400, 32px, 125%);
+}
