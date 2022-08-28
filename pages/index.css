@@ -51,6 +51,31 @@
   margin: 0;
 }
 
+.button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  margin: 0;
+  height: 50px;
+  background-color: #47474c;
+  letter-spacing: 0.375px;
+}
+.button_type_submit {
+  width: 221px;
+  border-radius: 0px 8px 8px 0px;
+  padding: 15px 37px 11px 16px;
+}
+.button_type_button {
+  width: 306px;
+  border-radius: 8px;
+  padding: 14px 30px 12px 30px;
+}
+
 .card {
   background-color: #1c1c1e;
 }
@@ -134,7 +159,7 @@
   margin-left: 6px;
 }
 .header__form {
-  margin-top: 230px;
+  margin-top: 231px;
 }
 .header__copyright {
   margin-top: 13px;
@@ -216,7 +241,17 @@
 }
 
 .warranty {
+  padding: 59px 30px 60px 30px;
+}
+
+.support {
   padding: 60px 30px;
+}
+.support__button {
+  margin-top: 90px;
+}
+.support__text {
+  margin-top: 50px;
 }
 
 .form {
@@ -247,24 +282,4 @@
 }
 .form__input:focus {
   background: rgba(142, 142, 152, 0.3);
-}
-
-.button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  height: 50px;
-  background-color: #47474c;
-  letter-spacing: 0.375px;
-}
-.button_type_submit {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  margin: 0;
-  width: 221px;
-  border-radius: 0px 8px 8px 0px;
-  padding: 15px 37px 11px 16px;
 }
