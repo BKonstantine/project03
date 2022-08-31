@@ -2,27 +2,50 @@
   display: flex;
   flex-direction: column;
   padding: 60px 30px;
+  @media screen and (max-width: 1024px) {
+    padding: 57px 30px 32px 30px;
+  }
 
   &__title {
     @include font-setup($title-color, 400, 112px, 100%);
     margin-top: 58px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 70px;
+      line-height: 129%;
+      margin-top: 70px;
+    }
   }
 
   &__subtitle {
     @include font-setup($title-color, 400, 80px, 88%);
     margin-top: 20px;
+    @media screen and (max-width: 1024px) {
+      font-size: 50px;
+      line-height: 120%;
+      margin-top: 0px;
+    }
   }
 
   &__logo {
     margin-left: 6px;
+    @media screen and (max-width: 1024px) {
+      margin-left: 0px;
+    }
   }
 
   &__form {
     margin-top: 231px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 470px;
+    }
   }
 
   &__copyright {
     margin-top: 13px;
     margin-left: 10px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 11px;
+    }
   }
 }
