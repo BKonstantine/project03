@@ -37,5 +37,9 @@
   &__price {
     @include font-setup($green-color, 400, 14px, 100%);
     margin-top: 41px;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 39px;
+    }
   }
 }
