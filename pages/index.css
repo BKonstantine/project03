@@ -161,6 +161,41 @@
   }
 }
 
+.form {
+  display: flex;
+  align-items: center;
+}
+.form__input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  margin: 0;
+  letter-spacing: 0.375px;
+  box-sizing: border-box;
+  padding: 13px 0 13px 16px;
+  width: 348px;
+  height: 50px;
+  background: rgba(142, 142, 152, 0.2);
+  border-radius: 8px 0px 0px 8px;
+  outline-style: none;
+}
+@media screen and (max-width: 1024px) {
+  .form__input_place_header {
+    width: 427px;
+  }
+}
+.form__input:hover {
+  background: rgba(142, 142, 152, 0.3);
+}
+.form__input:focus {
+  background: rgba(142, 142, 152, 0.3);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -332,17 +367,38 @@
 .support {
   padding: 60px 30px;
 }
+@media screen and (max-width: 1024px) {
+  .support {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 .support__button {
   margin-top: 90px;
 }
+@media screen and (max-width: 1024px) {
+  .support__button {
+    margin-top: 80px;
+  }
+}
 .support__text {
   margin-top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .support__text {
+    margin-top: 40px;
+  }
 }
 
 .footer {
   display: flex;
   flex-direction: column;
   padding: 178px 30px 60px 30px;
+}
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 148px 60px 60px 60px;
+  }
 }
 .footer__line {
   width: 100%;
@@ -360,38 +416,9 @@
   justify-content: space-between;
   margin-top: 18px;
 }
-
-.form {
-  display: flex;
-  align-items: center;
-}
-.form__input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  margin: 0;
-  letter-spacing: 0.375px;
-  box-sizing: border-box;
-  padding: 13px 0 13px 16px;
-  width: 348px;
-  height: 50px;
-  background: rgba(142, 142, 152, 0.2);
-  border-radius: 8px 0px 0px 8px;
-  outline-style: none;
-}
 @media screen and (max-width: 1024px) {
-  .form__input {
-    width: 427px;
+  .footer__container-copyright {
+    flex-direction: column;
+    gap: 60px;
   }
-}
-.form__input:hover {
-  background: rgba(142, 142, 152, 0.3);
-}
-.form__input:focus {
-  background: rgba(142, 142, 152, 0.3);
 }

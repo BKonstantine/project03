@@ -1,11 +1,22 @@
 .support {
   padding: 60px 30px;
 
+  @media screen and (max-width: 1024px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   &__button {
     margin-top: 90px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 80px;
+    }
   }
 
   &__text {
     margin-top: 50px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 40px;
+    }
   }
 }
