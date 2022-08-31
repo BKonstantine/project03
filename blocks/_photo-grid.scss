@@ -4,6 +4,10 @@
   padding: 60px 30px;
   box-sizing: border-box;
 
+  @media screen and (max-width: 1024px) {
+    padding: 20px 60px 60px 60px;
+  }
+
   &__container {
     display: grid;
     grid-gap: 20px;
@@ -12,7 +16,8 @@
   &__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;    
+    object-fit: cover;
+    border-radius: 10px;
   }
 
   &__container_position_first {
@@ -22,7 +27,10 @@
 
   &__container_position_second {
     grid-template-columns: minmax(173px, 1fr) minmax(280px, 730px);
-    grid-template-rows: minmax(344px, 552px);
+    grid-template-rows: 552px;
+    @media screen and (max-width: 1024px) {
+      grid-template-rows: 344px;
+    }
   }
 
   &__element {
