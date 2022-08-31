@@ -4,16 +4,23 @@
   height: 50px;
   background-color: $subtitle-color;
   letter-spacing: 0.375px;
+  text-align: start;  
+
+  &_disabled-text {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
 
   &_type_submit {
     width: 221px;
     border-radius: 0px 8px 8px 0px;
-    padding: 15px 37px 11px 16px;
+    padding: 15px 0 11px 16px;
   }
 
   &_type_button {
     width: 306px;
     border-radius: 8px;
-    padding: 14px 30px 12px 30px;
+    padding: 14px 0 12px 30px;
   }
 }
