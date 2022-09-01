@@ -212,6 +212,11 @@
     padding: 57px 60px 32px 60px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 24px 20px 20px 20px;
+  }
+}
 .header__title {
   color: #ffffff;
   font-weight: 400;
@@ -307,6 +312,11 @@
     padding: 20px 60px 60px 60px;
   }
 }
+@media screen and (max-width: 767px) {
+  .photo-grid {
+    padding: 20px 20px 20px 20px;
+  }
+}
 .photo-grid__container {
   display: grid;
   grid-gap: 20px;
@@ -322,6 +332,12 @@
   grid-template-columns: minmax(280px, 448px) minmax(180px, 1fr);
   grid-template-rows: 230px;
 }
+@media screen and (max-width: 767px) {
+  .photo-grid__container_position_first {
+    grid-template-columns: minmax(280px, 1fr);
+    grid-template-rows: 142px 67px;
+  }
+}
 .photo-grid__container_position_second {
   grid-template-columns: minmax(173px, 1fr) minmax(280px, 730px);
   grid-template-rows: 552px;
@@ -329,6 +345,12 @@
 @media screen and (max-width: 1024px) {
   .photo-grid__container_position_second {
     grid-template-rows: 344px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .photo-grid__container_position_second {
+    grid-template-columns: minmax(280px, 1fr);
+    grid-template-rows: 124px 211px;
   }
 }
 .photo-grid__element {
@@ -355,6 +377,11 @@
     padding-right: 60px;
   }
 }
+@media screen and (max-width: 767px) {
+  .services {
+    padding: 40px 20px 30px 20px;
+  }
+}
 .services__title {
   margin-top: 60px;
 }
@@ -369,6 +396,11 @@
     padding-right: 60px;
   }
 }
+@media screen and (max-width: 767px) {
+  .warranty {
+    padding: 40px 20px 30px 20px;
+  }
+}
 
 .support {
   padding: 60px 30px;
@@ -377,6 +409,11 @@
   .support {
     padding-left: 60px;
     padding-right: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .support {
+    padding: 40px 20px 30px 20px;
   }
 }
 .support__button {
@@ -404,6 +441,11 @@
 @media screen and (max-width: 1024px) {
   .footer {
     padding: 148px 60px 60px 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 148px 20px 20px 20px;
   }
 }
 .footer__line {

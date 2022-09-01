@@ -8,6 +8,10 @@
     padding: 20px 60px 60px 60px;
   }
 
+  @media screen and (max-width: 767px) {
+    padding: 20px 20px 20px 20px;
+  }
+
   &__container {
     display: grid;
     grid-gap: 20px;
@@ -23,6 +27,11 @@
   &__container_position_first {
     grid-template-columns: minmax(280px, 448px) minmax(180px, 1fr);
     grid-template-rows: 230px;
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: minmax(280px, 1fr);
+      grid-template-rows: 142px 67px;
+    }
   }
 
   &__container_position_second {
@@ -30,6 +39,11 @@
     grid-template-rows: 552px;
     @media screen and (max-width: 1024px) {
       grid-template-rows: 344px;
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: minmax(280px, 1fr);
+      grid-template-rows: 124px 211px;
     }
   }
 
