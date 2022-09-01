@@ -4,7 +4,11 @@
   height: 50px;
   background-color: $subtitle-color;
   letter-spacing: 0.375px;
-  text-align: start;  
+  text-align: start;
+
+  @media screen and (max-width: 470px) {
+    @include font-setup($title-color, 400, 12px, 150%);
+  }
 
   &_disabled-text {
     @media screen and (max-width: 767px) {
@@ -16,11 +20,21 @@
     width: 221px;
     border-radius: 0px 8px 8px 0px;
     padding: 15px 0 11px 16px;
+
+    @media screen and (max-width: 470px) {
+      padding: 0;
+      width: 51px;
+    }
   }
 
   &_type_button {
     width: 306px;
     border-radius: 8px;
     padding: 14px 0 12px 30px;
+
+    @media screen and (max-width: 470px) {
+      width: 280px;
+      padding: 16px 26px 16px 34px;
+    }
   }
 }

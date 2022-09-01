@@ -25,6 +25,11 @@
     grid-template-columns: 1fr;
   }
 }
+@media screen and (max-width: 470px) {
+  .container_place_services-card {
+    margin-top: 70px;
+  }
+}
 .container_place_warranty {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,6 +39,12 @@
 @media screen and (max-width: 1024px) {
   .container_place_warranty {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 470px) {
+  .container_place_warranty {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
   }
 }
 
@@ -58,6 +69,11 @@
     line-height: 150%;
   }
 }
+@media screen and (max-width: 470px) {
+  .text {
+    font-size: 12px;
+  }
+}
 
 .title {
   color: #ffffff;
@@ -70,6 +86,11 @@
   .title {
     font-size: 20px;
     line-height: 150%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .title {
+    font-size: 12px;
   }
 }
 
@@ -88,6 +109,15 @@
   letter-spacing: 0.375px;
   text-align: start;
 }
+@media screen and (max-width: 470px) {
+  .button {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .button_disabled-text {
     display: none;
@@ -98,10 +128,22 @@
   border-radius: 0px 8px 8px 0px;
   padding: 15px 0 11px 16px;
 }
+@media screen and (max-width: 470px) {
+  .button_type_submit {
+    padding: 0;
+    width: 51px;
+  }
+}
 .button_type_button {
   width: 306px;
   border-radius: 8px;
   padding: 14px 0 12px 30px;
+}
+@media screen and (max-width: 470px) {
+  .button_type_button {
+    width: 280px;
+    padding: 16px 26px 16px 34px;
+  }
 }
 
 .card {
@@ -111,9 +153,20 @@
   padding: 40px;
   border-radius: 16px;
 }
+@media screen and (max-width: 470px) {
+  .card_place_services {
+    padding: 20px;
+  }
+}
 .card_place_warranty {
   padding: 20px;
   border-radius: 10px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 470px) {
+  .card_place_warranty {
+    min-height: 148px;
+  }
 }
 .card__work-type {
   color: #8e8e98;
@@ -130,6 +183,16 @@
   margin: 0;
   margin-top: 20px;
 }
+@media screen and (max-width: 470px) {
+  .card__title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    margin: 0;
+    margin-top: 10px;
+  }
+}
 .card__title_place_warranty {
   color: #eaeaf0;
   font-weight: 500;
@@ -145,6 +208,16 @@
   margin: 0;
   margin-top: 40px;
 }
+@media screen and (max-width: 470px) {
+  .card__subtitle {
+    color: #8e8e98;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    margin-top: 28px;
+  }
+}
 .card__subtitle_place_warranty {
   color: #8e8e98;
   font-weight: 400;
@@ -152,6 +225,16 @@
   line-height: 127%;
   margin: 0;
   margin-top: 38px;
+}
+@media screen and (max-width: 470px) {
+  .card__subtitle_place_warranty {
+    color: #8e8e98;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    margin-top: 36px;
+  }
 }
 .card__price {
   color: #25e197;
@@ -164,6 +247,16 @@
 @media screen and (max-width: 1024px) {
   .card__price {
     margin-top: 39px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .card__price {
+    color: #25e197;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    margin: 0;
+    margin-top: 100px;
   }
 }
 
@@ -190,9 +283,19 @@
   border-radius: 8px 0px 0px 8px;
   outline-style: none;
 }
+@media screen and (max-width: 470px) {
+  .form__input {
+    width: 229px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .form__input_place_header {
     width: 427px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .form__input_place_header {
+    width: 229px;
   }
 }
 .form__input:hover {
@@ -232,6 +335,13 @@
     margin-top: 70px;
   }
 }
+@media screen and (max-width: 470px) {
+  .header__title {
+    font-size: 50px;
+    line-height: 120%;
+    margin-top: 60px;
+  }
+}
 .header__subtitle {
   color: #ffffff;
   font-weight: 400;
@@ -245,6 +355,13 @@
     font-size: 50px;
     line-height: 120%;
     margin-top: 0px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .header__subtitle {
+    font-size: 30px;
+    line-height: 127%;
+    margin-top: 10px;
   }
 }
 .header__logo {
@@ -263,6 +380,11 @@
     margin-top: 470px;
   }
 }
+@media screen and (max-width: 470px) {
+  .header__form {
+    margin-top: 260px;
+  }
+}
 .header__copyright {
   margin-top: 13px;
   margin-left: 10px;
@@ -272,11 +394,21 @@
     margin-top: 11px;
   }
 }
+@media screen and (max-width: 470px) {
+  .header__copyright {
+    margin-left: 0px;
+  }
+}
 
 .logo {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media screen and (max-width: 470px) {
+  .logo {
+    gap: 16px;
+  }
 }
 .logo__title {
   color: #ffffff;
@@ -284,6 +416,15 @@
   font-size: 22px;
   line-height: 136%;
   margin: 0;
+}
+@media screen and (max-width: 470px) {
+  .logo__title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0;
+  }
 }
 .logo__subtitle {
   color: #000000;
@@ -385,6 +526,11 @@
 .services__title {
   margin-top: 60px;
 }
+@media screen and (max-width: 470px) {
+  .services__title {
+    margin-top: 20px;
+  }
+}
 
 .warranty {
   padding: 59px 30px 60px 30px;
@@ -424,12 +570,22 @@
     margin-top: 80px;
   }
 }
+@media screen and (max-width: 470px) {
+  .support__button {
+    margin-top: 50px;
+  }
+}
 .support__text {
   margin-top: 50px;
 }
 @media screen and (max-width: 1024px) {
   .support__text {
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .support__text {
+    margin-top: 30px;
   }
 }
 
@@ -456,8 +612,18 @@
 .footer__logo {
   margin-top: 60px;
 }
+@media screen and (max-width: 470px) {
+  .footer__logo {
+    margin-top: 30px;
+  }
+}
 .footer__form {
   margin-top: 84px;
+}
+@media screen and (max-width: 470px) {
+  .footer__form {
+    margin-top: 184px;
+  }
 }
 .footer__container-copyright {
   display: flex;
@@ -468,5 +634,11 @@
   .footer__container-copyright {
     flex-direction: column;
     gap: 60px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .footer__container-copyright {
+    gap: 40px;
+    margin-top: 10px;
   }
 }

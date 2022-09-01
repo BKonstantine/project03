@@ -13,10 +13,17 @@
     background: rgba(142, 142, 152, 0.2);
     border-radius: 8px 0px 0px 8px;
     outline-style: none;
+    @media screen and (max-width: 470px) {
+      width: 229px;
+    }
 
     &_place_header {
       @media screen and (max-width: 1024px) {
         width: 427px;
+      }
+      
+      @media screen and (max-width: 470px) {
+        width: 229px;
       }
     }
   }

@@ -19,10 +19,18 @@
 
   &__logo {
     margin-top: 60px;
+
+    @media screen and (max-width: 470px) {
+      margin-top: 30px;
+    }
   }
 
   &__form {
     margin-top: 84px;
+
+    @media screen and (max-width: 470px) {
+      margin-top: 184px;
+    }
   }
 
   &__container-copyright {
@@ -33,6 +41,11 @@
     @media screen and (max-width: 1024px) {
       flex-direction: column;
       gap: 60px;
+    }
+
+    @media screen and (max-width: 470px) {
+      gap: 40px;
+      margin-top: 10px;
     }
   }
 }

@@ -4,11 +4,20 @@
   &_place_services {
     padding: 40px;
     border-radius: 16px;
+
+    @media screen and (max-width: 470px) {
+      padding: 20px;
+    }
   }
 
   &_place_warranty {
     padding: 20px;
     border-radius: 10px;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: 470px) {
+      min-height: 148px;
+    }
   }
 
   &__work-type {
@@ -19,6 +28,11 @@
     @include font-setup($title-color, 400, 32px, 100%);
     margin-top: 20px;
 
+    @media screen and (max-width: 470px) {
+      @include font-setup($title-color, 400, 24px, 133%);
+      margin-top: 10px;
+    }
+
     &_place_warranty {
       @include font-setup($title-color-sm-card, 500, 18px, 100%);
     }
@@ -28,9 +42,19 @@
     @include font-setup($text-color, 400, 32px, 125%);
     margin-top: 40px;
 
+    @media screen and (max-width: 470px) {
+      @include font-setup($text-color, 400, 12px, 150%);
+      margin-top: 28px;
+    }
+
     &_place_warranty {
       @include font-setup($text-color, 400, 15px, 127%);
       margin-top: 38px;
+
+      @media screen and (max-width: 470px) {
+        @include font-setup($text-color, 400, 12px, 150%);
+        margin-top: 36px;
+      }
     }
   }
 
@@ -40,6 +64,11 @@
 
     @media screen and (max-width: 1024px) {
       margin-top: 39px;
+    }
+
+    @media screen and (max-width: 470px) {
+      @include font-setup($green-color, 400, 12px, 150%);
+      margin-top: 100px;
     }
   }
 }

@@ -14,5 +14,9 @@
 
   &__title {
     margin-top: 60px;
+
+    @media screen and (max-width: 470px) {
+      margin-top: 20px;
+    }
   }
 }

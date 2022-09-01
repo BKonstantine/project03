@@ -3,8 +3,16 @@
   align-items: center;
   gap: 20px;
 
+  @media screen and (max-width: 470px) {
+    gap: 16px;
+  }
+
   &__title {
-    @include font-setup($title-color, 400, 22px, 136%);    
+    @include font-setup($title-color, 400, 22px, 136%);
+
+    @media screen and (max-width: 470px) {
+      @include font-setup($title-color, 400, 20px, 140%);
+    }
   }
 
   &__subtitle {
