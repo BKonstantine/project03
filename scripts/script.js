@@ -1,8 +1,12 @@
 const button = document.querySelector(".button");
-const formInput = document.querySelector(".form__input");
+let formInput = document.querySelector(".form__input");
 
-formInput.addEventListener("input", function (evt) {
-  if (evt.isTrusted) {
+function checkInput() {
+  if (formInput.value) {
     button.textContent = "Круто, спасибо за доверие!";
-  }  
-});
+  } else {    
+    button.textContent = "Отремонтируйте камеру";
+  }
+}
+
+formInput.addEventListener("input", checkInput);
