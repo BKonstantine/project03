@@ -1,12 +1,15 @@
-const button = document.querySelector(".button");
-let formInput = document.querySelector(".form__input");
+const forms = document.querySelectorAll(".form");
 
-function checkInput() {
+function checkInput(element) {
+  const button = element.querySelector(".button");
+  let formInput = element.querySelector(".form__input");
   if (formInput.value) {
     button.textContent = "Круто, спасибо за доверие!";
-  } else {    
+  } else {
     button.textContent = "Отремонтируйте камеру";
   }
 }
 
-formInput.addEventListener("input", checkInput);
+forms.forEach((form) => {
+  form.addEventListener("input", () => checkInput(form));
+});
