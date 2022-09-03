@@ -1,11 +1,12 @@
 .container {
+  padding: 0;
   max-width: 1120px;
 
   &_place_photo-grid {
     max-width: 1440px;
   }
 
-  &_place_services-card {
+  &_place_services-card {    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;

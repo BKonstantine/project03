@@ -9,6 +9,7 @@
 }
 
 .container {
+  padding: 0;
   max-width: 1120px;
 }
 .container_place_photo-grid {
@@ -109,7 +110,7 @@
   letter-spacing: 0.375px;
   text-align: start;
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .button {
     color: #ffffff;
     font-weight: 400;
@@ -118,7 +119,7 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 560px) {
   .button_disabled-text {
     display: none;
   }
@@ -148,6 +149,11 @@
 
 .card {
   background-color: #1c1c1e;
+  cursor: pointer;
+  list-style: none;
+}
+.card:hover {
+  background-color: #232327;
 }
 .card_place_services {
   padding: 40px;

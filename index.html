@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
       <h1 class="header__title">Ремонт</h1>
       <p class="header__subtitle">Плёночных фотоаппаратов</p>
       <form class="form header__form">
-        <input type="email" class="form__input form__input_place_header" />
+        <input type="email" class="form__input form__input_place_header" required/>
         <button type="submit" class="button button_type_submit">
           <span class="button button_disabled-text">Отремонтируйте камеру</span>
         </button>
@@ -27,7 +27,7 @@
     </header>
     <main class="main">
       <section
-        class="photo-grid container container_place_photo-grid body__section"
+        class="photo-grid container container_place_photo-grid body__section" aria-label="Фотоаппараты"
       >
         <div class="photo-grid__container photo-grid__container_position_first">
           <img
@@ -63,8 +63,8 @@
           Для энтузиастов, от энтузиастов &#128072;
         </h2>
 
-        <div class="container container_place_services-card">
-          <div class="card card_place_services">
+        <ul class="container container_place_services-card">
+          <li class="card card_place_services">
             <p class="card__work-type">CLA</p>
             <h3 class="card__title">Чистка камер.</h3>
             <p class="card__subtitle">
@@ -72,8 +72,8 @@
               юстировка.
             </p>
             <p class="card__price">от 2000₽</p>
-          </div>
-          <div class="card card_place_services">
+          </li>
+          <li class="card card_place_services">
             <p class="card__work-type">Ремонт</p>
             <h3 class="card__title">Ремонт камер.</h3>
             <p class="card__subtitle">
@@ -81,27 +81,27 @@
               питания.
             </p>
             <p class="card__price">от 2500₽</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="warranty container body__section">
         <h2 class="title warranty__title">Полная гарантия &#9889;</h2>
-        <div class="container container_place_warranty">
-          <div class="card card_place_warranty">
+        <ul class="container container_place_warranty">
+          <li class="card card_place_warranty">
             <h3 class="card__title card__title_place_warranty">CLA</h3>
             <p class="card__subtitle card__subtitle_place_warranty">
               После CLA мы&nbsp;даем гарантию на&nbsp;1&nbsp;год, в&nbsp;случае
               беды мы&nbsp;заново обслужим вашу камеру.
             </p>
-          </div>
-          <div class="card card_place_warranty">
+          </li>
+          <li class="card card_place_warranty">
             <h3 class="card__title card__title_place_warranty">Ремонт</h3>
             <p class="card__subtitle card__subtitle_place_warranty">
               После ремонта мы&nbsp;даем гарантию на&nbsp;3&nbsp;месяца или
               6&nbsp;месяцев.
             </p>
-          </div>
-          <div class="card card_place_warranty">
+          </li>
+          <li class="card card_place_warranty">
             <h3 class="card__title card__title_place_warranty">
               Пайка и адаптация
             </h3>
@@ -109,15 +109,15 @@
               После пайки и&nbsp;адаптации питания мы&nbsp;даем гарантию
               на&nbsp;1&nbsp;год.
             </p>
-          </div>
-          <div class="card card_place_warranty">
+          </li>
+          <li class="card card_place_warranty">
             <h3 class="card__title card__title_place_warranty">Осмотр</h3>
             <p class="card__subtitle card__subtitle_place_warranty">
               Осмотр камеры&nbsp;&mdash; бесплатен, если мы&nbsp;что-то сломаем,
               поменяем деталь сами.
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
       <section class="support container body__section">
         <h2 class="title support__title">Поддержите нас &#129309;</h2>
@@ -138,7 +138,7 @@
         <p class="logo__subtitle">мы открылись</p>
       </div>
       <form class="form footer__form">
-        <input type="email" class="form__input" />
+        <input type="email" class="form__input" required/>
         <button type="submit" class="button button_type_submit">
           <span class="button button_disabled-text">Отремонтируйте камеру</span>
         </button>

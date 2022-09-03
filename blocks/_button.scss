@@ -6,12 +6,12 @@
   letter-spacing: 0.375px;
   text-align: start;
 
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 767px) {
     @include font-setup($title-color, 400, 12px, 150%);
   }
 
   &_disabled-text {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 560px) {
       display: none;
     }
   }

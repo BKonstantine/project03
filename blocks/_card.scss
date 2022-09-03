@@ -1,5 +1,11 @@
 .card {
   background-color: $bg-card-color;
+  cursor: pointer;
+  list-style: none;
+
+  &:hover {
+    background-color: #232327;
+  }
 
   &_place_services {
     padding: 40px;
@@ -14,7 +20,7 @@
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
-    
+
     @media screen and (max-width: 470px) {
       min-height: 148px;
     }
