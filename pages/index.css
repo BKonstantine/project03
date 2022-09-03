@@ -9,6 +9,7 @@
 }
 
 .container {
+  padding: 0;
   max-width: 1120px;
 }
 .container_place_photo-grid {
@@ -149,6 +150,7 @@
 .card {
   background-color: #1c1c1e;
   cursor: pointer;
+  list-style: none;
 }
 .card:hover {
   background-color: #232327;
