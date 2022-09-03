@@ -109,7 +109,7 @@
   letter-spacing: 0.375px;
   text-align: start;
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 767px) {
   .button {
     color: #ffffff;
     font-weight: 400;
@@ -118,7 +118,7 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 560px) {
   .button_disabled-text {
     display: none;
   }
