@@ -148,6 +148,10 @@
 
 .card {
   background-color: #1c1c1e;
+  cursor: pointer;
+}
+.card:hover {
+  background-color: #232327;
 }
 .card_place_services {
   padding: 40px;
