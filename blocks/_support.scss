@@ -1,0 +1,33 @@
+.support {
+  padding: 60px 30px;
+
+  @media screen and (max-width: 1024px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 40px 20px 30px 20px;
+  }
+
+  &__button {
+    margin-top: 90px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 80px;
+    }
+
+    @media screen and (max-width: 470px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__text {
+    margin-top: 50px;
+    @media screen and (max-width: 1024px) {
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 470px) {
+      margin-top: 30px;
+    }
+  }
+}

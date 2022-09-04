@@ -1,0 +1,10 @@
+.text {
+  @include font-setup($text-color, 400, 32px, 125%);
+  @media screen and (max-width: 1024px) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  @media screen and (max-width: 470px) {
+    font-size: 12px;    
+  }
+}

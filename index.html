@@ -1,15 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>project03</title>
   </head>
-  <body>
-    <header class="header"></header>
-    <main class="main"></main>
-    <footer class="footer"></footer>
+  <body class="body">
+    <header class="header container body__section">
+      <div class="logo header__logo">
+        <p class="logo__title">C-Works</p>
+        <p class="logo__subtitle">мы открылись</p>
+      </div>
+      <h1 class="header__title">Ремонт</h1>
+      <p class="header__subtitle">Плёночных фотоаппаратов</p>
+      <form class="form header__form">
+        <input type="email" class="form__input form__input_place_header" required/>
+        <button type="submit" class="button button_type_submit">
+          <span class="button button_disabled-text">Отремонтируйте камеру</span>
+        </button>
+      </form>
+      <p class="copyright header__copyright">
+        Напишите нам и мы свяжемся с вами.
+      </p>
+    </header>
+    <main class="main">
+      <section
+        class="photo-grid container container_place_photo-grid body__section" aria-label="Фотоаппараты"
+      >
+        <div class="photo-grid__container photo-grid__container_position_first">
+          <img
+            src="./images/image1.png"
+            alt="Фотоаппарат"
+            class="photo-grid__image"
+          />
+          <div
+            class="photo-grid__element photo-grid__element_color_yellow"
+          ></div>
+        </div>
+        <div
+          class="photo-grid__container photo-grid__container_position_second"
+        >
+          <div
+            class="photo-grid__element photo-grid__element_color_green"
+          ></div>
+          <img
+            src="./images/image2.png"
+            alt="Фотоаппарат"
+            class="photo-grid__image"
+          />
+        </div>
+      </section>
+      <section class="services container body__section">
+        <p class="text">
+          Мы&nbsp;ремонтируем плёночные фотоаппараты. Полностью механические
+          камеры, относительно современные камеры на&nbsp;электронике, проводим
+          CLA камер, принимаем в&nbsp;зачёт оплаты сломаные тушки
+          и&nbsp;объективы.
+        </p>
+        <h2 class="title services__title">
+          Для энтузиастов, от энтузиастов &#128072;
+        </h2>
+
+        <ul class="container container_place_services-card">
+          <li class="card card_place_services">
+            <p class="card__work-type">CLA</p>
+            <h3 class="card__title">Чистка камер.</h3>
+            <p class="card__subtitle">
+              Замена уплотнителей, дампфера зеркала, смазка механизмов,
+              юстировка.
+            </p>
+            <p class="card__price">от 2000₽</p>
+          </li>
+          <li class="card card_place_services">
+            <p class="card__work-type">Ремонт</p>
+            <h3 class="card__title">Ремонт камер.</h3>
+            <p class="card__subtitle">
+              Ремонт механизмов, замена деталей, пайка электроники, адаптация
+              питания.
+            </p>
+            <p class="card__price">от 2500₽</p>
+          </li>
+        </ul>
+      </section>
+      <section class="warranty container body__section">
+        <h2 class="title warranty__title">Полная гарантия &#9889;</h2>
+        <ul class="container container_place_warranty">
+          <li class="card card_place_warranty">
+            <h3 class="card__title card__title_place_warranty">CLA</h3>
+            <p class="card__subtitle card__subtitle_place_warranty">
+              После CLA мы&nbsp;даем гарантию на&nbsp;1&nbsp;год, в&nbsp;случае
+              беды мы&nbsp;заново обслужим вашу камеру.
+            </p>
+          </li>
+          <li class="card card_place_warranty">
+            <h3 class="card__title card__title_place_warranty">Ремонт</h3>
+            <p class="card__subtitle card__subtitle_place_warranty">
+              После ремонта мы&nbsp;даем гарантию на&nbsp;3&nbsp;месяца или
+              6&nbsp;месяцев.
+            </p>
+          </li>
+          <li class="card card_place_warranty">
+            <h3 class="card__title card__title_place_warranty">
+              Пайка и адаптация
+            </h3>
+            <p class="card__subtitle card__subtitle_place_warranty">
+              После пайки и&nbsp;адаптации питания мы&nbsp;даем гарантию
+              на&nbsp;1&nbsp;год.
+            </p>
+          </li>
+          <li class="card card_place_warranty">
+            <h3 class="card__title card__title_place_warranty">Осмотр</h3>
+            <p class="card__subtitle card__subtitle_place_warranty">
+              Осмотр камеры&nbsp;&mdash; бесплатен, если мы&nbsp;что-то сломаем,
+              поменяем деталь сами.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="support container body__section">
+        <h2 class="title support__title">Поддержите нас &#129309;</h2>
+        <button type="button" class="button button_type_button support__button">
+          Напишите нам если хотите помочь!
+        </button>
+        <p class="text support__text">
+          Ещё вы&nbsp;сможете безвозмездно поддержать нас на&nbsp;Patreon, пока
+          мы&nbsp;ещё создали аккаунт, но&nbsp;как только это сделаем, сообщим
+          вам.
+        </p>
+      </section>
+    </main>
+    <footer class="footer container body__section">
+      <div class="footer__line"></div>
+      <div class="logo footer__logo">
+        <p class="logo__title">C-Works</p>
+        <p class="logo__subtitle">мы открылись</p>
+      </div>
+      <form class="form footer__form">
+        <input type="email" class="form__input" required/>
+        <button type="submit" class="button button_type_submit">
+          <span class="button button_disabled-text">Отремонтируйте камеру</span>
+        </button>
+      </form>
+      <div class="container footer__container-copyright">
+        <p class="copyright footer__copyright">
+          Напишите нам и мы свяжемся с вами.
+        </p>
+        <p class="copyright footer__copyright">&copy; C-Works, 2022.</p>
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

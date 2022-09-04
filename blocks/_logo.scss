@@ -1,0 +1,25 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @media screen and (max-width: 470px) {
+    gap: 16px;
+  }
+
+  &__title {
+    @include font-setup($title-color, 400, 22px, 136%);
+
+    @media screen and (max-width: 470px) {
+      @include font-setup($title-color, 400, 20px, 140%);
+    }
+  }
+
+  &__subtitle {
+    @include font-setup(#000000, 400, 12px, 100%);
+    display: block;
+    background-color: $green-color;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+}
